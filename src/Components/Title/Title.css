@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    color: rgb(4, 1, 44);
+}
+.title > h2{
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.title > p{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}

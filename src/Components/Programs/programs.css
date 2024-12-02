@@ -1,0 +1,59 @@
+.programs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5rem auto ;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption{
+    background: rgba(30, 30, 216, 0.3);
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 10rem;
+    transition: 0.5s;
+}
+.caption img{
+    width: 5rem;
+    margin: 1rem auto;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+@media(max-width:600px){
+    .programs{
+      flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width:800px){
+    .programs{
+      flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+}
